@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <style>
+        :root{
+            --main_background:#c60b0b;
+            --main_background2:linear-gradient(blue,white);
+
+        }
+
+        body{
+            background-color: var(--main_background);
+            background-image: var(--main_background2);
+        }
+
+        .box{
+            width:  150px;
+            height: 150px;
+           
+            border: 2px solid black;
+            margin: 10px;
+            transition: all .3s cubic-bezier(0,1.57,1,.44);
+        }
+
+        .box1{
+            background-color: red;
+            opacity: 0.3;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: green;
+        }
+
+
+
+        /* Transform */
+        /* width, height, opacity, Filter, color */
+
+        .box1:hover{
+            width:calc(100% - 10px);
+            color:rgb(14, 67, 212);
+            opacity: 1;
+            transition: all 1s linear;
+        }
+
+        .box2:hover{
+            animation-name: rotate_translate;
+            animation-iteration-count: 1;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+
+
+        }
+
+        .box3:hover{
+            animation: flip; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 5s; /* don't forget to set a duration! */
+            /* filter: grayscale(.7); */
+            filter: hue-rotate(180deg);
+            filter:drop-shadow(0px 0px 10px black);
+
+        }
+
+        @keyframes rotate_translate {
+            0%{
+                transform: rotate(0deg) scale(1);
+                background-color: aqua;
+            }
+            20%{
+                transform: rotate(180deg) scale(2);
+                background-color: rgb(255, 111, 0);
+            }
+            50%{
+                transform: rotate(720deg) scale(2);
+                background-color: rgb(111, 252, 24);
+            }
+            75%{
+                transform: scale(.5) rotate(-720deg);
+                background-color: rgb(0, 15, 132);
+            }
+            100%{
+                background-color: aqua;
+                transform: rotate(0deg) scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+
+    </div>    
+    <div class="box box2">
+
+    </div>    
+    <div class="box box3 animate__animated animate__flipInY">
+
+    </div>    
+
+
+</body>
+</html>

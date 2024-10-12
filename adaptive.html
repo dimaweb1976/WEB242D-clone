@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin:0px;
+            font-size:14pt;
+        }
+        nav{
+            background-color: beige;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            height: 40px;
+        }
+
+        .burger_menu{
+            display: none;
+        }
+        .container{
+            padding: 0px 40px;
+        }
+        .text_image{
+            display: flex;
+            justify-content: center;
+        }
+
+        .text_image img{
+            width: 200px;
+        }
+        .container h1{
+            font-size: 2em;
+        }
+
+        .text_image p{
+            font-size: 1em;
+        }
+
+        /* Media Quieries */
+
+        @media screen and (max-width:768px){
+            body{
+                background-color: aquamarine;
+            }
+
+
+            nav{
+                flex-direction: column;
+            }
+            nav a{
+                display: none;
+            }
+
+            .burger_menu{
+            display: block;
+        }
+    
+
+
+            .text_image{
+                flex-direction: column;
+            }
+
+            .text_image img{
+                display: block;
+                margin: 10px auto;
+                max-width: 140px;
+            }
+
+            .container h1{
+            font-size: 1.5em;
+        }
+
+            .text_image p{
+                font-size: 0.8em;
+            }
+
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="burger_menu">
+            <button>Menu</button>
+        </div>
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+        <a href="">Link3</a>
+    </nav>
+    <div class="container">
+        <h1>Adaptive</h1>
+        <div class="text_image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam reprehenderit omnis earum
+                labore! Iure iste, soluta fuga debitis fugit nemo officiis obcaecati ad et quam dolores, quo eos
+                dignissimos!</p>
+            <img src="./img/image1.png" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>

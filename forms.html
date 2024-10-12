@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+
+    <form action="">
+        <div>
+            <label for="firstName">Name:</label>
+            <input type="text" name="firstName" id="firstName" required >
+        </div>   
+        <div>
+            <label for="surName" >Surname:</label>
+            <input type="text" name="surName" id="surName" placeholder="Petrov">
+        </div> 
+        
+        <div>
+            <label for="favCar">Your favorite car:</label>
+            <select name="favCar" id="favCar">
+                <option value=""></option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <label for="favColor">Your favorite color:</label>
+            <input type="color" name="favColor" id="favColor">
+        </div>
+        <div>
+            <label for="">Your car budget:</label><br>
+            <input type="radio" name="budget" id="budget1" value="1">
+            <label for="budget1">1000-2000 EUR</label>
+            <input type="radio" name="budget" id="budget2" value="2">
+            <label for="budget2">2000-5000 EUR</label>
+            <input type="radio" name="budget" id="budget3" value="3">
+            <label for="budget3">5000-10000 EUR</label>
+        </div>
+        <div>
+            <input type="checkbox" name="agree" id="agree" value="true">
+            <label for="agree" >Agree with terms</label>
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+
+    </form>
+
+
+    <h2>Generated form from: </h2>
+    <p>https://beautifytools.com/html-form-builder.php</p>
+    <form action="">
+        <div class="rendered-form">
+            <div class="formbuilder-text form-group field-text-1726507206080">
+                <label for="text-1726507206080" class="formbuilder-text-label">Text Field</label>
+                <input type="text" class="form-control" name="text-1726507206080" access="false" value="adsfsdf" id="text-1726507206080">
+            </div>
+            <div class="formbuilder-button form-group field-button-1726507191784">
+                <button type="button" class="btn-default btn" name="button-1726507191784" access="false"  id="button-1726507191784">Button</button>
+            </div>
+            <div class="formbuilder-file form-group field-file-1726507195597">
+                <label for="file-1726507195597" class="formbuilder-file-label">File Upload</label>
+                <input type="file" class="form-control" name="file-1726507195597" access="false" multiple="false" id="file-1726507195597">
+            </div>
+            <div class="formbuilder-radio-group form-group field-radio-group-1726507200281">
+                <label for="radio-group-1726507200281" class="formbuilder-radio-group-label">Radio Group</label>
+                <div class="radio-group">
+                    <div class="formbuilder-radio">
+                        <input name="radio-group-1726507200281" access="false" id="radio-group-1726507200281-0" value="option-1" type="radio">
+                        <label for="radio-group-1726507200281-0">Option 1</label>
+                    </div>
+                    <div class="formbuilder-radio">
+                        <input name="radio-group-1726507200281" access="false" id="radio-group-1726507200281-1" value="option-2" type="radio">
+                        <label for="radio-group-1726507200281-1">Option 2</label>
+                    </div>
+                    <div class="formbuilder-radio">
+                        <input name="radio-group-1726507200281" access="false" id="radio-group-1726507200281-2" value="option-3" type="radio" checked="checked">
+                        <label for="radio-group-1726507200281-2">Option 3</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

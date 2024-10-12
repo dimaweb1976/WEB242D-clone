@@ -1,0 +1,129 @@
+body{
+    margin:0px;
+    background: #4dbeff;
+}
+
+
+header,footer{
+    background: #6445fb; 
+    color:#d7f7b7;
+}
+/* 
+Comment
+
+*/
+
+header{
+    width:400px;
+    width:75%;
+    margin:50px;
+    margin:40px 100px;
+    margin:20px 40px 60px 100px;
+    margin-top: 40px;
+    margin:100px auto;
+    border-color: red;
+    border-width: 10px;
+    border-style: solid;
+    /* border-image: url("https://i.etsystatic.com/10919371/r/il/4a9d15/1604887817/il_570xN.1604887817_11hf.jpg");
+    border-image-width: 100%; */
+    border-radius: 10px;
+    border:2px solid #053a6e;
+    padding: 20px;
+    color:aliceblue;
+    margin-bottom: 30px;
+
+}
+
+header h1{
+    text-align: center;
+} 
+
+nav{
+    background: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap:20px;
+}
+
+
+div.container{
+    width: 80%;
+    margin: auto;
+}
+
+p{
+    clear: both;
+    overflow:hidden ;
+}
+
+
+p img{
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float:left;
+    /* float:right; */
+    /* clear: left; */
+    /* clear: right;
+    clear: both; */
+
+}
+
+footer{
+    background: #000; 
+    /* background-color: #ff470f5a; */
+    padding: 20px;
+    margin-top: 50px;
+    color:white;
+}
+
+
+
+/* Members page */
+
+
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:40px; 
+        
+}
+
+.member{
+    border: 1px solid rgba(255, 255, 255, 0.766);
+    padding: 15px;
+}
+
+
+.contact form{
+    margin-top: 50px;
+
+}
+
+.contact form div{
+    margin:10px; 
+}
+.contact label{
+    display: block;
+}
+
+.contact input, .contact textarea{
+    padding:4px;
+    width: 100%;
+    resize: none;
+}
+
+
+form{
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    margin: auto;
+}
